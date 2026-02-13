@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troll Pot | Authentic Icelandic Souvenirs</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="dark-theme">
+    <header>
+        <nav>
+            <div class="logo">Troll Pot</div>
+            <div class="lang-switcher">
+                <button onclick="setLanguage('en')" id="btn-en" class="active">EN</button>
+                <button onclick="setLanguage('is')" id="id-is">IS</button>
+                <button onclick="setLanguage('ru')" id="btn-ru">RU</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1 id="hero-title" data-i18n="hero_title">Authentic Icelandic Troll Pots</h1>
+                <p id="hero-subtitle" data-i18n="hero_subtitle">Bring a piece of Icelandic magic and fresh herbs to your
+                    home.</p>
+                <a href="#products" class="btn-primary" data-i18n="btn_explore">Explore Collection</a>
+            </div>
+            <div class="scroll-indicator"></div>
+        </section>
+
+        <section id="story" class="section">
+            <div class="container">
+                <h2 data-i18n="story_title">The Legend of the Trolls</h2>
+                <div class="story-content">
+                    <p data-i18n="story_text_1">In the heart of Iceland's volcanic landscapes, tales of trolls have been
+                        told for generations. Our pots are crafted to capture the spirit of these legendary guardians of
+                        the earth.</p>
+                    <p data-i18n="story_text_2">Each pot is a unique souvenir, designed to grow life from the very soil
+                        of the North.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="section bg-alt">
+            <div class="container">
+                <h2 data-i18n="products_title">Choose Your Herb</h2>
+                <div class="product-grid">
+                    <!-- Products will be populated or translated via JS -->
+                    <div class="product-card">
+                        <div class="product-icon">🌿</div>
+                        <h3 data-i18n="herb_basil_title">Basil</h3>
+                        <p data-i18n="herb_basil_desc">Classic green or vibrant purple. The perfect companion for any
+                            kitchen.</p>
+                    </div>
+                    <div class="product-card highlight">
+                        <div class="product-icon">🧠</div>
+                        <h3 data-i18n="herb_oregano_title">Oregano</h3>
+                        <p data-i18n="herb_oregano_desc">Known to boost memory. Inhale its rich aroma directly from the
+                            troll's head!</p>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-icon">🌱</div>
+                        <h3 data-i18n="herb_cilantro_title">Cilantro</h3>
+                        <p data-i18n="herb_cilantro_desc">Authentic taste and fresh aroma for your culinary adventures.
+                        </p>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-icon">🧅</div>
+                        <h3 data-i18n="herb_onion_title">Green Onion</h3>
+                        <p data-i18n="herb_onion_desc">Fast-growing and practical, adding a pop of green to your troll.
+                        </p>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-icon">🌶️</div>
+                        <h3 data-i18n="herb_pepper_title">Hot Pepper</h3>
+                        <p data-i18n="herb_pepper_desc">Multi-colored "Ogonek" peppers to please the eye and spice up
+                            life!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="substrate" class="section">
+            <div class="container">
+                <h2 data-i18n="substrate_title">The Secret of the Soil</h2>
+                <div class="substrate-grid">
+                    <div class="substrate-item">
+                        <h4 data-i18n="soil_lava">Icelandic Lava Rock</h4>
+                        <p data-i18n="soil_lava_desc">Local volcanic soil for authentic mineral richness.</p>
+                    </div>
+                    <div class="substrate-item">
+                        <h4 data-i18n="soil_fiber">Coconut Fiber & Perlite</h4>
+                        <p data-i18n="soil_fiber_desc">Ensuring perfect aeration and moisture retention.</p>
+                    </div>
+                    <div class="substrate-item">
+                        <h4 data-i18n="soil_bacteria">Beneficial Bacteria</h4>
+                        <p data-i18n="soil_bacteria_desc">Enriched with specific fertile bacteria and Mycorrhiza.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section bg-alt">
+            <div class="container">
+                <h2 data-i18n="gallery_title">Authentic Gallery</h2>
+                <p class="gallery-info" data-i18n="gallery_subtitle">Real photos of our troll family in action.</p>
+                <!-- Simplified gallery for now, expecting photos in images/ folder -->
+                <div class="gallery-grid">
+                    <img src="images/troll-1.jpg" alt="Troll Pot 1" class="gallery-img"
+                        onerror="this.src='https://via.placeholder.com/400?text=Troll+Photo+1'">
+                    <img src="images/troll-2.jpg" alt="Troll Pot 2" class="gallery-img"
+                        onerror="this.src='https://via.placeholder.com/400?text=Troll+Photo+2'">
+                    <img src="images/troll-3.jpg" alt="Troll Pot 3" class="gallery-img"
+                        onerror="this.src='https://via.placeholder.com/400?text=Troll+Photo+3'">
+                    <img src="images/troll-4.jpg" alt="Troll Pot 4" class="gallery-img"
+                        onerror="this.src='https://via.placeholder.com/400?text=Troll+Photo+4'">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Icelandic Troll Pots. Authentic Souvenirs from Iceland.</p>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
